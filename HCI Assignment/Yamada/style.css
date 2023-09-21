@@ -1,0 +1,813 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Play', sans-serif;
+}
+
+body {
+    background-color: rgb(62, 62, 62);
+}
+
+.container {
+    width: 100%;
+}
+
+#one {
+    display: flex;
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    height: 90px;
+    background-color: rgb(214, 214, 214);
+}
+
+#two {
+    position: relative;
+    background-color: rgb(214, 214, 214);
+    z-index: 20;
+}
+
+#three {
+    position: relative;
+    height: 288px;
+    color: white;
+    background-color: rgb(214, 214, 214);
+}
+
+.navbar-container {
+    position: relative;
+    width: 90%;
+    height: 70%;
+    background-color: white;
+    z-index: 100;
+}
+
+.logo {
+    position: absolute;
+    top: 18%;
+    left: 2%;
+    width: 80px;
+}
+
+.yamada {
+    position: absolute;
+    top: 28%;
+    left: 120px;
+    font-size: 40px;
+}
+
+.navbar-list {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    width: 65%;
+}
+
+.navbar-items ul {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.navbar-items li{
+    width: 100%;
+    display: inline;
+    list-style-type: none;
+    padding: 19px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.selected {
+    color: rgb(177, 28, 28);
+}
+
+.navbar-items li:hover{
+    background-color: rgb(195, 195, 195);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-items a {
+    padding: 19px;
+}
+
+.navbar-items a:hover{
+    color: rgb(177, 28, 28);
+}
+
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(24, 24, 24);
+    width: 100%;
+    height: 85%;
+}
+
+.social-media-container {  
+    position: absolute;
+    left: 5%;
+    z-index: 10;
+    width: 30%;
+    height: 187px;
+    background-color: rgb(116, 116, 116);
+    box-shadow: 15px 15px rgb(79, 79, 79);
+}
+
+.social-media-container h1 {
+    color: rgb(194, 194, 194);
+    padding-left: 15px;
+    margin: 10px;
+}
+
+.social-media-container img {
+    width: 70px;
+    height: 70px;
+}
+
+.social-media-container img:hover {
+    filter: brightness(30%);
+}
+
+.social-media {
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-content {
+    display: flex;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.footer-information {
+    margin: 10px;
+    width: 30%;
+}
+
+.footer-information div {
+    width: 80%;
+    padding: 5px;
+    border-bottom: 3px solid rgb(99, 99, 99);
+    color: rgb(194, 194, 194);
+}
+
+.footer-information li {
+    padding: 5px;
+}
+
+.footer-information a {
+    color: rgb(194, 194, 194);
+}
+
+.footer-information a:hover {
+    color: white;
+}
+
+.footer-information img{
+    padding-top: 10px;
+    width: 140px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.copyright {
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(62, 62, 62);
+    color: rgb(194, 194, 194);
+    text-align: center;
+    font-size: 15px;
+}
+
+/* ================================================================= */
+
+.banner {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.header {
+    padding: 100px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.motto {
+    font-style: italic;
+    margin: 15px;
+}
+
+.header button {
+    width: 250px;
+    height: 70px;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.freego-header {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    background: white;
+}
+
+.freego-header img {
+    width: 450px;
+    padding: 30px;
+}
+
+.home-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-bottom: 80px;
+    background-color: grey;
+}
+
+.home-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 330px;
+    background-color: white;
+}
+
+.home-card img{
+    width: 95%;
+}
+
+.freego-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    padding: 60px;
+    background-color: white;
+}
+
+.freego-button button{
+    width: 250px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 50px;
+    background-color: orange;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.color-palet {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color:black;
+}
+
+.blue {
+    background-color: rgb(1, 1, 147);
+}
+
+.white {
+    background-color: white;
+}
+
+.prod {
+    padding: 50px 0;
+}
+
+.products-sticky {
+    position: sticky;
+    top: 0;
+}
+
+.products-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+    background-color: rgb(214, 214, 214);
+}
+
+.products-header h1 {
+    font-size: 40px;
+    margin: 15px;
+}
+
+.mark {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(24, 24, 24);
+}
+
+.products-container {
+    display: flex;
+}
+
+.products-nav {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 86px;
+    width: 280px;
+    height: 80px;
+}
+
+.products-nav-container {
+    width: 90%;
+    height: 90%;
+    text-align: center;
+}
+
+.products-nav-items {
+    width: 100%;
+    padding: 15px 0;
+    color: rgb(215, 215, 215);
+    background-color: rgb(111, 110, 110);
+}
+
+.products-nav-items:hover {
+    background-color: rgb(214, 0, 0);
+}
+
+.products-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+}
+
+.prod-selected {
+    background-color: rgb(181, 3, 3);
+}
+
+.products-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    width: 330px;
+    height: 300px;
+}
+
+.products-card img {
+    width: 100%;
+}
+
+.dealers-header {
+    position: relative;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.dealers-header h1{
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    color: white;
+    font-size: 50px;
+}
+
+.dealers-header img{
+    width: 100%;
+}
+
+.dealers-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.dealers-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+    width: 90%;
+    background-color: rgb(226, 226, 226);
+}
+
+.dealers-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+}
+
+
+.dealers-img {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+}
+
+.dealers-img img {
+    width: 100%;
+}
+
+.dealers-img:hover {
+    position: absolute;
+    opacity: 100%;
+}
+
+.dealers-description {
+    padding: 0 30px;
+}
+
+.login-header {
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    background-color: rgb(214, 214, 214);
+    padding: 20px 0;
+}
+
+.login-header h1 {
+    font-size: 50px;
+    margin: 10px;
+}
+
+.login-header p {
+    font-size: 25px;
+    font-style: italic;
+    padding: 10px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-content {
+    display: flex;
+    width: 90%;
+    margin: 50px 0;
+    background-color: rgb(156, 154, 154);
+}
+
+.login-content img {
+    width: 50%;
+    height: 650px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.form-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(237, 237, 237);
+    width: 80%;
+    height: 85%;
+}
+
+.form-content h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+form {
+    width: 80%;
+    padding: 20px 0;
+}
+
+form div{
+    margin-bottom: 5px; 
+}
+
+input {
+    margin: 2px 0 10px 0;
+    width: 90%;
+    height: 20px;
+}
+
+.form-name {
+    display: flex;
+}
+
+.form-name input{
+    width: 80%;
+}
+
+.form-age input{
+    width: 10%;
+    margin-left: 10px;
+}
+
+.form-gender {
+    margin: 2px 0 10px 0;
+}
+
+.form-gender input {
+    width: 13px;
+}
+
+.gender-options {
+    display: flex;
+    gap: 50px;
+    margin-left: 10px;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+.form-button button {
+    border-radius: 50px;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1394px) {
+    .products-card {
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 1007px) {
+    .products-content {
+        gap: 20px;
+    }
+
+    .form-content h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 984px) {
+    .yamada {
+        left: 110px;
+    }
+
+    .navbar-items li{
+        padding: 22px 0;
+        font-size: 16px;
+    }
+
+    .footer-content {
+        right: 7%;
+    }
+
+    .home-card {
+        width: 50%;
+        height: 450px;
+    }
+
+    .login-content {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .login-content img {
+        width: 100%;
+        height: 800px;
+    }
+
+    .form-container {
+        width: 100%;
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 788px) {
+    .yamada {
+        display: none;
+    }
+
+    .social-media-container { 
+        left: 8%;
+        width: 80%;
+    }
+
+    #three {
+        height: 500px;
+    }
+
+    .footer-content {
+        top: 40%;
+        left: 9%;
+        width: 80%;
+        height: 50%;
+    }
+
+    .dealers-header h1{
+        left: 32%;
+    }
+
+    .login-content img {
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 637px) {
+    .banner {
+        margin-top: 40px;
+    }
+
+    .navbar-list {
+        right: 10%;
+    }
+
+    .navbar-items li:hover{
+        background-color: white;
+    }
+
+    .home-content {
+        width: 80%;
+    }
+
+    .home-card {
+        width: 100%;
+        height: 550px;
+    }
+
+    .freego-header {
+        width: 80%;
+    }
+
+    .freego-button button{
+        width: 180px;
+    }
+
+    .dealers-header {
+        margin-top: 40px;
+    }
+
+    .dealers-header h1{
+        font-size: 40px;
+        left: 30%;
+    }
+
+    .login-content img {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #one {
+        display: flex;
+        justify-content: center;
+        height: 125px;
+    }
+
+    .logo {
+        top: 5%;
+        left: 5%;
+        width: 80px;
+    }
+    
+
+    .navbar-list {
+        right: 0;
+        width: 70%;
+    }
+
+    .navbar-items ul {
+        display: block;
+        width: 100%;
+        margin: 0; 
+        padding: 0;
+    }
+
+    .navbar-items li{
+        display: block;
+        width: 90%;
+        font-size: 15px;
+        margin: 0; 
+        padding: 2px;
+    }
+
+    .navbar-items a {
+        padding: 0;
+    }
+
+    #three {
+        height: 630px;
+    }
+    
+    .footer-content {
+        top: 28%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner {
+        margin-top: 60px;
+    }
+
+    .header {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+    
+    .motto {
+        font-style: italic;
+        margin: 15px;
+    }
+
+    .home-card {
+        height: 360px;
+    }
+    
+    .header button {
+        width: 250px;
+        height: 70px;
+        margin: 10px;
+        font-size: 30px;
+    }
+
+    .freego-header img {
+        width: 400px;
+        padding: 5px;
+    }
+
+    .products-container {
+        display: block;
+    }
+
+    .products-nav {
+        width: 100%;
+    }
+
+    .products-content {
+        width: 90%;
+    }
+
+    .dealers-header {
+        margin-top: 60px;
+    }
+
+    .dealers-header h1{
+        font-size: 35px;
+        left: 25%;
+    }
+
+    .login-content {
+        width: 80%;
+    }
+
+    .login-content img {
+        height: 350px;
+    }
+
+    .form-container {
+        height: 700px;
+    }
+}
